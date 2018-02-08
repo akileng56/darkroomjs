@@ -108,6 +108,7 @@ h1 {
 
 .image-container.target {
   margin-top: 40px;
+  overflow: inherit;
 }
 
 .image-container img {

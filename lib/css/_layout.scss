@@ -7,6 +7,23 @@
   left: 0;
 }
 
+.canvas-container canvas{
+  height: auto !important;
+  width: auto !important;
+  max-width: 100%;
+}
+
+.canvas-container .upper-canvas {
+  position: relative !important;
+}
+ 
+
+.canvas-container {
+  height: auto !important;
+  width: auto !important;
+  max-width: 100%;
+}
+
 .darkroom-image-container img {
   // display: none;
 }
