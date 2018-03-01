@@ -1,16 +1,15 @@
-var concat = require('gulp-concat')
-var connect = require('gulp-connect')
-var gulp = require('gulp')
-var gutil = require('gulp-util')
-var inject = require('gulp-inject')
-var plumber = require('gulp-plumber')
-var rimraf = require('rimraf')
-var sass = require('gulp-sass')
-var sourcemaps = require('gulp-sourcemaps')
-var svgmin = require('gulp-svgmin')
-var svgstore = require('gulp-svgstore')
-var uglify = require('gulp-uglify')
-
+var concat = require('gulp-concat');
+var connect = require('gulp-connect');
+var gulp = require('gulp');
+var gutil = require('gulp-util');
+var inject = require('gulp-inject');
+var plumber = require('gulp-plumber');
+var rimraf = require('rimraf');
+var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
+var svgmin = require('gulp-svgmin');
+var svgstore = require('gulp-svgstore');
+var uglify = require('gulp-uglify');
 
 //
 // Variables
@@ -95,7 +94,7 @@ gulp.task('scripts', function () {
       .pipe(isDebug ? gutil.noop() : uglify({mangle: false}))
     .pipe(isDebug ? sourcemaps.write() : gutil.noop())
     .pipe(gulp.dest(distDir))
-})
+});
 
 //
 // Stylesheet
@@ -109,4 +108,4 @@ gulp.task('styles', function () {
       }))
     .pipe(isDebug ? sourcemaps.write() : gutil.noop())
     .pipe(gulp.dest(distDir))
-})
+});
