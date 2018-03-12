@@ -82,6 +82,8 @@ gulp.task('scripts', function () {
     srcDir + '/js/plugins/darkroom.crop.js',
     srcDir + '/js/plugins/darkroom.pencil.js',
     srcDir + '/js/plugins/darkroom.rectangle.js',
+    srcDir + '/js/plugins/darkroom.text.js',
+    srcDir + '/js/plugins/darkroom.circle.js',
     srcDir + '/js/plugins/zoom.js',
     srcDir + '/js/plugins/darkroom.save.js'
   ];
