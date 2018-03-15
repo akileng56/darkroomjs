@@ -6,10 +6,14 @@
   "homepage": "https://mattketmo.github.io/darkroomjs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mattketmo/darkroomjs.git"
+    "url": "git+https://github.com/mattketmo/darkroomjs.git"
   },
   "author": "Matthieu Moquet <matthieu@moquet.net> (http://moquet.net/)",
-  "dependencies": {},
+  "dependencies": {
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
@@ -25,12 +29,20 @@
     "rimraf": "^2.2.8"
   },
   "scripts": {
-    "start": "node_modules/.bin/gulp server build --prod",
-    "develop": "node_modules/.bin/gulp"
+    "start": "gulp server build --prod",
+    "develop": "gulp"
   },
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/mattketmo/darkroomjs/issues"
+  },
+  "main": "gulpfile.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": []
 }
