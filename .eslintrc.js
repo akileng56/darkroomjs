@@ -2,6 +2,7 @@ module.exports = {
   "extends": "airbnb-base",
   "rules": {
     "func-names": [ "error", "never" ],
+    "comma-dangle": ["error", "never"],
     "max-len": ["error", { "code": 150 }],
     "no-param-reassign": ["error", { "ignorePropertyModificationsFor": ["delta"] }],
     "quotes": ["error", "double"],
@@ -30,6 +31,7 @@ module.exports = {
   "globals": {
     "Darkroom": true,
     "Image": true,
-    "fabric": true
+    "fabric": true,
+    "document": true
 }
 };
