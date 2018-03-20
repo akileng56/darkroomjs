@@ -10,16 +10,16 @@ module.exports = {
     "no-mixed-operators": [
       "error",
       {
-          "groups": [
-              ["+", "-", "*", "/", "%", "**"],
-              ["&", "|", "^", "~", "<<", ">>", ">>>"],
-              ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
-              ["&&", "||"],
-              ["in", "instanceof"]
-          ],
-          "allowSamePrecedence": true
+        "groups": [
+          [ "+", "-", "*", "/", "%", "**" ],
+          [ "&", "|", "^", "~", "<<", ">>", ">>>" ],
+          [ "==", "!=", "===", "!==", ">", ">=", "<", "<=" ],
+          [ "&&", "||" ],
+          [ "in", "instanceof" ]
+        ],
+        "allowSamePrecedence": true
       }
-  ],
+    ],
     "no-undef": ["error", { "typeof": false }],
     "prefer-destructuring": ["error", {
       "array": false,
@@ -32,6 +32,7 @@ module.exports = {
     "Darkroom": true,
     "Image": true,
     "fabric": true,
-    "document": true
+    "document": true,
+    "window": true
 }
 };
