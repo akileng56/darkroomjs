@@ -30,9 +30,12 @@
   &:last-child {
     border-right: none;
   }
+  input {
+    height: 33px;
+    width: 57px;
+    padding-top: 0px;
+  }
 }
-
-
 //
 // Button
 //
