@@ -4,8 +4,9 @@
 .darkroom-toolbar {
   display: flex;
   flex-wrap: wrap;
-  position: initial;
-  top: -45px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 10px;
   left: 0;
   background: #444;
   height: auto;
